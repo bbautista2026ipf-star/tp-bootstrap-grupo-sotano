@@ -1,0 +1,53 @@
+body {
+    background-color:black !important;
+    color:  rgb(86, 12, 12);
+}
+
+#carouselExample{
+    width: 400px;
+}
+#evento  {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+.entrada {
+    width: 350px;
+}
+footer {
+  background-color: rgb(212, 138, 3);
+}
+footer, p {
+    color: rgb(86, 12, 12);
+  
+}
+footer, h6 {
+  color: rgb(86, 12, 12);
+ 
+}
+
+#redes {
+  color: rgb(86, 12, 12)!important;
+}
+
+footer, li {
+    color: rgb(86, 12, 12);
+}
+small{
+     color: rgb(86, 12, 12) !important;
+}
+
+H1 {
+    text-align: center;
+
+}   
+
+#Seccion1 {
+flex-direction: column;
+
+}
+#show {
+ width:700px;
+}
