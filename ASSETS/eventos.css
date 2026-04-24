@@ -5,14 +5,9 @@ body {
 
 #carouselExample{
     width: 400px;
-}
-#evento  {
-    display:flex;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
-    
 }
+
 .entrada {
     width: 350px;
 }
@@ -50,4 +45,80 @@ flex-direction: column;
 }
 #show {
  width:700px;
+}
+#carouselExampleFade {
+    align-items: center;
+    width: 600px;
+}
+#logo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  background-color: rgb(206, 5, 8);
+  transition: transform 0.3s ease;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+}
+
+#logo-menu {
+  gap: 600px;
+}
+
+#logo-menu:hover #linea-roja {
+  width: 150px;
+}
+
+#linea-roja {
+  height: 4px;
+  width: 0;
+  background-color: rgb(86, 12, 12);
+  transition: width 0.5s ease;
+  gap: 100px;
+}
+#menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-20px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    visibility 0.5s ease;
+}
+
+#menu li a {
+  color: #d4a017 !important;
+}
+#menu li a:hover {
+  color: rgb(212, 138, 3) !important;
+  border-bottom-color: rgb(212, 138, 3);
+}
+
+#menu li a {
+  border-bottom: 2px solid transparent;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+  padding-bottom: 4px;
+}
+#menu li a:hover {
+  color: rgb(86, 12, 12);
+  border-bottom-color: rgb(86, 12, 12);
+}
+#logo-menu:hover #linea-roja {
+  width: 80px;
+}
+#logo-menu:hover #menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+#cabecera {
+  background-color: rgb(0, 0, 0);
+}
+a {
+    text-decoration: none;
+    color: rgb(212, 138, 3);
 }
