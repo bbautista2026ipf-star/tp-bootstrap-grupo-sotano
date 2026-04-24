@@ -1,0 +1,27 @@
+.navbar-nav {
+    padding: 4px 180px;
+    display: flex;
+    gap: 140px;
+}
+
+#vista-afuera img {
+    margin-left: 18px;
+}
+
+#vista-afuera figcaption {
+    text-align: center;
+}
+
+.ratio iframe {
+    height: 490px;
+    margin-top: 12px;
+}
+
+.col-6 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+body {
+    background-color: rgba(184, 119, 21, 0.644);
+}
