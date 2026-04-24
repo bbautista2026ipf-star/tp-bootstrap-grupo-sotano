@@ -5,12 +5,19 @@
 }
 
 #vista-afuera img {
-    width: 240px;
-    height: 180px;
-    margin-left: 13px;
+    margin-left: 18px;
 }
 
 #vista-afuera figcaption {
-    font-size: small;
     text-align: center;
+}
+
+.ratio iframe {
+    height: 490px;
+    margin-top: 12px;
+}
+
+.col-6 {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
