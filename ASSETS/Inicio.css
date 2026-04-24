@@ -1,0 +1,15 @@
+#contenido h2 {
+  color: rgb(212, 138, 3);
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+#contenido p {
+  line-height: 1.7;
+  padding-top: 10px;
+}
+
+#contenido img {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+}
