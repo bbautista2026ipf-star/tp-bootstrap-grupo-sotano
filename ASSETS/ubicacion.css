@@ -3,3 +3,14 @@
     display: flex;
     gap: 140px;
 }
+
+#vista-afuera img {
+    width: 240px;
+    height: 180px;
+    margin-left: 13px;
+}
+
+#vista-afuera figcaption {
+    font-size: small;
+    text-align: center;
+}
