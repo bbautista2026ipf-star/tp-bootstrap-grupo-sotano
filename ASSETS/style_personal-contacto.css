@@ -1,0 +1,22 @@
+footer {
+  background-color: rgb(212, 138, 3);
+}
+footer, p {
+    color: rgb(86, 12, 12);
+  
+}
+footer, h6 {
+  color: rgb(86, 12, 12);
+ 
+}
+
+#redes {
+  color: rgb(86, 12, 12)!important;
+}
+
+footer, li {
+    color: rgb(86, 12, 12);
+}
+small{
+     color: rgb(86, 12, 12) !important;
+} 
