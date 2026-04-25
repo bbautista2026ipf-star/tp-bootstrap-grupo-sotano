@@ -10,6 +10,107 @@
   <link rel="stylesheet" href="ASSETS/style_personal-contacto.css">
 </head>
 
+ <header id="cabecera" class="py-3 py-md-5 border-bottom">
+      <div class="container-fluid px-3 px-md-5">
+  
+        <div id="logo-menu" class="d-none d-lg-flex align-items-center gap-5">
+          <img
+            src="ASSETS/IMG/LOGO.jpg"
+            alt="Logo"
+            id="logo"
+            class="rounded-circle border border-3 border-danger bg-warning p-2"
+          />
+          <div id="linea-roja"></div>
+          <ul id="menu" class="list-unstyled d-flex gap-5 m-0">
+            <li>
+              <a
+                href="INICIO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="EVENTOS.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Eventos</a
+              >
+            </li>
+            <li>
+              <a
+                href="PERSONAL.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a
+                href="CONTACTO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+  
+        <div
+          class="d-flex d-lg-none align-items-center justify-content-between"
+        >
+          <img
+            src="ASSETS/IMG/LOGO.jpg"
+            alt="Logo"
+            class="rounded-circle border border-3 border-danger bg-warning p-1"
+            style="width: 60px; height: 60px"
+          />
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuMovil"
+            aria-controls="menuMovil"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+        </div>
+
+        <div class="collapse d-lg-none mt-3" id="menuMovil">
+          <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+            <li>
+              <a
+                href="INICIO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="EVENTOS.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Eventos</a
+              >
+            </li>
+            <li>
+              <a
+                href="PERSONAL.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a
+                href="CONTACTO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
 <body>
   <main>
 
@@ -132,8 +233,8 @@
 
 
         <div class="col-md-4 mb-4">
-          <h6>Nosotros</h6>
-          <p class="small">
+          <h6 id="tituloRojo">Nosotros</h6>
+          <p id="rojitoOscuro" class="small">
             Más que un bar, un punto clave de la escena rockera en Formosa.
             Un espacio dedicado a la música en vivo, donde bandas locales y nacionales
             hacen vibrar la noche con una identidad única.
@@ -142,16 +243,16 @@
 
 
         <div class="col-md-2 mb-4">
-          <h6>Dirección</h6>
-          <p class="small">
+          <h6 id="tituloRojo">Dirección</h6>
+          <p id="rojitoOscuro" class="small">
             Av. Dr. Luis Gutnisky 4306, esquina Martín Rodríguez
           </p>
         </div>
 
 
         <div class="col-md-3 mb-4">
-          <h6>Experiencia</h6>
-          <ul class="list-unstyled small">
+          <h6 id="tituloRojo">Experiencia</h6>
+          <ul id="listas" class="list-unstyled small">
             <li>Música en vivo</li>
             <li>Bebidas y tragos</li>
             <li>Ambiente rockero</li>
@@ -160,16 +261,16 @@
         </div>
 
         <div class="col-md-3 mb-4">
-          <h6>Seguinos</h6>
+          <h6 id="tituloRojo">Seguinos</h6>
 
-          <ul class="list-unstyled small">
+          <ul class=" list-unstyled small">
             <li>
               <a id="redes" href="https://www.instagram.com/sotano_cultural_/"
-                class="text-decoration-none text-warning link-primary me-3">Instagram</a>
+                class="text-decoration-none link-primary me-3">Instagram</a>
             </li>
             <li>
               <a id="redes" href="https://www.facebook.com/zonarockfsa/"
-                class="text-decoration-none text-danger link-primary me-3">Facebook</a>
+                class="text-decoration-none link-primary me-3">Facebook</a>
             </li>
           </ul>
 
