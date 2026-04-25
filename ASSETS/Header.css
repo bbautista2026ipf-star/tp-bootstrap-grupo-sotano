@@ -48,7 +48,6 @@
   transition:
     border-color 0.3s ease,
     color 0.3s ease;
-  padding-bottom: 4px;
 }
 #menu li a:hover {
   color: rgb(86, 12, 12);

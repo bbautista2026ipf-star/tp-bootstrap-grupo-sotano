@@ -13,3 +13,10 @@
   height: auto;
   padding-top: 10px;
 }
+
+.navbar-nav {
+    padding: 4px 180px;
+    display: flex;
+    gap: 140px;
+}
+

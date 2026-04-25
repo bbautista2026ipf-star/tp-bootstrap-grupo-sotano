@@ -11,15 +11,18 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-¿
+
     <link rel="stylesheet" href="ASSETS/Header.css" />
     <link rel="stylesheet" href="ASSETS/Inicio.css" />
+     <link rel="stylesheet" href="ASSETS/style_personal-contacto.css" />
   </head>
   <body>
-¿
-    <header id="cabecera" class="py-3 py-md-5 border-bottom">
+
+    <header id="cabecera" class="py-3 py-md-5">
+
+      
       <div class="container-fluid px-3 px-md-5">
-  ¿
+  
         <div id="logo-menu" class="d-none d-lg-flex align-items-center gap-5">
           <img
             src="ASSETS/IMG/LOGO.jpg"
@@ -117,9 +120,35 @@
       </div>
     </header>
 
-    <main id="contenido" class="py-3 py-md-5">
-      <div class="container">
   
+    <main id="contenido" class="py-3 py-md-5">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sótano Cultural</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="INICIO.HTML">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal-contacto.html">Personal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html">Ubicación</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container">
+    <main id="contenido" class="py-3 py-md-5"></main>
         <section class="row align-items-center g-3 g-md-5 mb-4 mb-md-5">
           <div class="col-12 col-md-6">
             <div
@@ -416,5 +445,64 @@
         });
       })();
     </script>
+    
+
+      </div>
+    </main>
+
+    <footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h6>Nosotros</h6>
+        <p class="small">
+          Más que un bar, un punto clave de la escena rockera en Formosa. Un
+          espacio dedicado a la música en vivo, donde bandas locales y
+          nacionales hacen vibrar la noche con una identidad única.
+        </p>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6>Dirección</h6>
+        <p class="small">
+          Av. Dr. Luis Gutnisky 4306, esquina Martín Rodríguez
+        </p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h6>Experiencia</h6>
+        <ul class="list-unstyled small">
+          <li>Música en vivo</li>
+          <li>Bebidas y tragos</li>
+          <li>Ambiente rockero</li>
+          <li>Shows nacionales</li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h6>Seguinos</h6>
+        <ul class="list-unstyled small">
+          <li>
+            <a
+              id="redes"
+              href="https://www.instagram.com/sotano_cultural_/"
+              class="text-decoration-none text-warning link-primary me-3"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              id="redes"
+              href="https://www.facebook.com/zonarockfsa/"
+              class="text-decoration-none text-danger link-primary me-3"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr class="m-auto border-black" />
+  <div class="m-auto text-center mt-4 pt-3">
+    <small>© 2026 Sótano Cultural</small>
+  </div>
+</footer>
   </body>
 </html>
