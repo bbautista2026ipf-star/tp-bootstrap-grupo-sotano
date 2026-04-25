@@ -1,55 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <header>
-        
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="ASSETS/eventos.css" />
+  </head>
+  <body>
+    <header id="cabecera" class="py-3 py-md-5 border-bottom">
+      <div class="container-fluid px-3 px-md-5">
+        <!-- Versión ESCRITORIO/TABLET (oculto en móvil) -->
+        <div id="logo-menu" class="d-none d-lg-flex align-items-center gap-5">
+          <img
+            src="ASSETS/IMG/LOGO.jpg"
+            alt="Logo"
+            id="logo"
+            class="rounded-circle border border-3 border-danger bg-warning p-2"
+          />
+          <div id="linea-roja"></div>
+          <ul id="menu" class="list-unstyled d-flex gap-5 m-0">
+            <li>
+              <a
+                href="INICIO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="EVENTOS.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Eventos</a
+              >
+            </li>
+            <li>
+              <a
+                href="PERSONAL.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a
+                href="CONTACTO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Versión MÓVIL con menú hamburguesa -->
+        <div
+          class="d-flex d-lg-none align-items-center justify-content-between"
+        >
+          <img
+            src="ASSETS/IMG/LOGO.jpg"
+            alt="Logo"
+            class="rounded-circle border border-3 border-danger bg-warning p-1"
+            style="width: 60px; height: 60px"
+          />
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuMovil"
+            aria-controls="menuMovil"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+        </div>
+        <!-- Menú colapsable para móvil -->
+        <div class="collapse d-lg-none mt-3" id="menuMovil">
+          <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+            <li>
+              <a
+                href="INICIO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="EVENTOS.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Eventos</a
+              >
+            </li>
+            <li>
+              <a
+                href="PERSONAL.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a
+                href="CONTACTO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <h1>Sotano cultural</h1>
-    <h2>Eventos</h2>
-    <h2>Fechas</h2>
-    <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="abril.png" class="d-block w-100" alt="fecha">
-    </div>
-    <div class="carousel-item">
-      <img src="mayo.png" class="d-block w-100" alt="fecha">
-    </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<h2>Proximos eventos</h2>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="alter.jpeg" class="d-block w-100" alt="foto">
-    </div>
-    <div class="carousel-item">
-      <img src="fest.jpeg" class="d-block w-100" alt="foto">
-    </div>
-    <div class="carousel-item">
-      <img src="cerouno.jpeg" class="d-block w-100" alt="foto">
-    </div>
-    <div class="carousel-item"> 
-        <img src="franky.jpeg" class="d-block w-100" alt="foto">
-    </div>
-    <div class="carousel-item">
-        <img src="thm.jpeg" class="d-block w-100" alt="foto">
-    </div>
-  </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <main>
+      <h1>Sotano cultural</h1>
+      <h2>Fechas</h2>
+      <section class="container py-5">
+        <div id="carouselExample" class="carousel slide w-50 mx-auto">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="ASSETS/IMG/abril.png"
+                class="d-block w-100"
+                alt="fecha"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/mayo.png"
+                class="d-block w-100"
+                alt="fecha"
+              />
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div id="show">
+              <h2>Proximos eventos</h2>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide w-50"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="ASSETS/IMG/alter.jpeg"
+                      class="d-block w-100"
+                      alt="foto"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="ASSETS/IMG/fest.jpeg"
+                      class="d-block w-100"
+                      alt="foto"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="ASSETS/IMG/franky.jpeg"
+                      class="d-block w-100"
+                      alt="foto"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="ASSETS/IMG/cerouno.jpeg"
+                      class="d-block w-100"
+                      alt="foto"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="ASSETS/IMG/thm.jpeg"
+                      class="d-block w-100"
+                      alt="foto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div id="entradas">
+              <h2>ENTRADAS</h2>
+              <ul>
+                <li>
+                  <a
+                    href="https://alpogo.com/evento/flema-en-formosa-2026-25930?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn-abOjl-9F6PE7Hwi5-pGMh1mTmM_QDke7lGofEHphYnM_w5pNMIwySO_IKM_aem_E0FfFeaLVaFMItT2vU2ELg"
+                    >entradas_flema</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://linke-arte.com/arg/es/franky-style-formosa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnl6EIUDARVRJEvbczm2Id-SxXxyDC6LrM13IACRom1v3CHO7xvm94Rf_nwbo_aem_7vacr1CRxoJPJeeJIfvr3w"
+                    >entradas franke style</a
+                  >
+                </li>
+                <li>
+                  <a href="https://maps.app.goo.gl/anq9dqPv3XgoieGT8"
+                    >los demas solo en puerta</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>FOTOS DE NUESTROS SHOWS RECIENTES</h2>
+      <div class="d-flex justify-content-center">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade w-75">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="ASSETS/IMG/foto1.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto2.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto3.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto4.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto5.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto6.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto8.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto9.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto10.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto11.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="ASSETS/IMG/foto12.jpeg"
+                class="d-block w-100"
+                alt="foto"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h6>Nosotros</h6>
+            <p class="small">
+              Más que un bar, un punto clave de la escena rockera en Formosa. Un
+              espacio dedicado a la música en vivo, donde bandas locales y
+              nacionales hacen vibrar la noche con una identidad única.
+            </p>
+          </div>
+
+          <div class="col-md-2 mb-4">
+            <h6>Dirección</h6>
+            <p class="small">
+              Av. Dr. Luis Gutnisky 4306, esquina Martín Rodríguez
+            </p>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h6>Experiencia</h6>
+            <ul class="list-unstyled small">
+              <li>Música en vivo</li>
+              <li>Bebidas y tragos</li>
+              <li>Ambiente rockero</li>
+              <li>Shows nacionales</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h6>Seguinos</h6>
+
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  id="redes"
+                  href="https://www.instagram.com/sotano_cultural_/"
+                  class="text-decoration-none text-warning link-primary me-3"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  id="redes"
+                  href="https://www.facebook.com/zonarockfsa/"
+                  class="text-decoration-none text-danger link-primary me-3"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="m-auto border-black" />
+
+      <div class="m-auto text-center mt-4 pt-3">
+        <small>© 2026 Sótano Cultural</small>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
