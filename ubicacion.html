@@ -1,81 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubicacion</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="ASSETS/ubicacion.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubicacion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="ASSETS/Header.css">
+  <link rel="stylesheet" href="ASSETS/ubicacion.css">
 </head>
 <body>
+  <header id="cabecera" class="py-3 py-md-5 border-bottom">
+    <div class="container-fluid px-3 px-md-5">
+      <div id="logo-menu" class="d-none d-lg-flex align-items-center gap-5">
+        <img src="ASSETS/IMG/LOGO.jpg" alt="Logo" id="logo"
+          class="rounded-circle border border-3 border-danger bg-warning p-2" />
+        <div id="linea-roja"></div>
+        <ul id="menu" class="list-unstyled d-flex gap-5 m-0">
+          <li>
+            <a href="INICIO.HTML" class="text-white fw-bold fs-5 text-decoration-none">Inicio</a>
+          </li>
+          <li>
+            <a href="EVENTOS.HTML" class="text-white fw-bold fs-5 text-decoration-none">Eventos</a>
+          </li>
+          <li>
+            <a href="personal-contacto.html" class="text-white fw-bold fs-5 text-decoration-none">Personal</a>
+          </li>
+          <li>
+            <a href="ubicacion.html" class="text-white fw-bold fs-5 text-decoration-none">Ubicación</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex d-lg-none align-items-center justify-content-between">
+        <img src="ASSETS/IMG/LOGO.jpg" alt="Logo"
+          class="rounded-circle border border-3 border-danger bg-warning p-1"
+          style="width: 60px; height: 60px" />
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuMovil"
+          aria-controls="menuMovil" aria-expanded="false" aria-label="Toggle navigation">
+          ☰
+        </button>
+      </div>
+      <div class="collapse d-lg-none mt-3" id="menuMovil">
+        <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+          <li>
+            <a href="INICIO.HTML" class="text-white fw-bold fs-5 text-decoration-none">Inicio</a>
+          </li>
+          <li>
+            <a href="EVENTOS.HTML" class="text-white fw-bold fs-5 text-decoration-none">Eventos</a>
+          </li>
+          <li>
+            <a href="personal-contacto.html" class="text-white fw-bold fs-5 text-decoration-none">Personal</a>
+          </li>
+          <li>
+            <a href="ubicacion.html" class="text-white fw-bold fs-5 text-decoration-none">Ubicación</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sótano Cultural</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="INICIO.HTML">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="personal-contacto.html">Personal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
-                    </li>
-                </ul>     
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sótano Cultural</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="INICIO.HTML">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal-contacto.html">Personal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html">Ubicación</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <section class="body-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="card text-bg-dark">
-                        <div class="card-body">
-                            <h2 class="card-title">Ubicación</h2>
-                            <p><a class="icon-link" href="https://share.google/xal2QuxJb5J5D52Hl" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                                </svg>
-                                Av. Dr. Luis Gutnisky 4306, P3600CNC Formosa, Argentina
-                                </a>
-                            </p>
-                            <p>
-                                El Sótano Cultural se encuentra ubicado en la ciudad de Formosa Capital, específicamente en el barrio Villa del Rosario. Se sitúa sobre la Avenida Gutnisky al 4300, una de las arterias principales de la ciudad, en la intersección aproximada con la calle Martín Rodríguez.
-                            </p>
-                            <figure id="vista-afuera">
-                                <img src="ASSETS/img-ubi/sotano-ubi-cap.png" alt="stn-ub-cap">
-                                <figcaption>Vista desde afuera</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card text-bg-dark">
-                        <div class="card-body">
-                            <h2 class="card-title">Distancia</h2>
-                                <p>
-                                    En este mapa embebido (cortesía de Google Maps) podemos observar la cantidad aproximada de kilometros si nos dirigieramos desde la Plaza Gral San Martín hasta el establecimiento del Sótano Cultural por la Avenida Gutnisky.
-                                    5.5 km aprox. 13 minutos en auto, 15 min en bicicleta y casi 1 hora caminando.
-                                </p>
-                                <div class="ratio ratio-1x1">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d28641.515008645132!2d-58.20492090637092!3d-26.190517197281824!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x945ca5e47a5c896b%3A0x92f75f7383d1f8e5!2sPlaza%20Gral.%20San%20Mart%C3%ADn%2C%20Jos%C3%A9%20Mar%C3%ADa%20Uriburu%2C%20P3600%20Formosa!3m2!1d-26.1851624!2d-58.174239199999995!4m5!1s0x945caf9237461e95%3A0x7cd9363e112f80c4!2sS%C3%B3tano%20Cultural%20Formosa%2C%20Av.%20Dr.%20Luis%20Gutnisky%204306%2C%20P3600CNC%20Formosa!3m2!1d-26.197329699999997!2d-58.210178899999995!5e0!3m2!1ses-419!2sar!4v1777007989699!5m2!1ses-419!2sar" style="border:0;" title="Distancia desde Plaza San Martín hasta Sótano Cultural" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="card text-bg-dark">
+              <div class="card-body">
+                <h2 class="card-title">Ubicación</h2>
+                <p>
+                  <a class="icon-link" href="https://share.google/xal2QuxJb5J5D52Hl" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-geo-alt" viewBox="0 0 16 16">
+                      <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                    Av. Dr. Luis Gutnisky 4306, P3600CNC Formosa, Argentina
+                  </a>
+                </p>
+                <p>
+                  El Sótano Cultural se encuentra ubicado en la ciudad de Formosa Capital, específicamente en el barrio
+                  Villa del Rosario. Se sitúa sobre la Avenida Gutnisky al 4300, una de las arterias principales de la
+                  ciudad, en la intersección aproximada con la calle Martín Rodríguez.
+                </p>
+                <figure id="vista-afuera">
+                  <img src="ASSETS/img-ubi/sotano-ubi-cap.png" alt="stn-ub-cap">
+                  <figcaption>Vista desde afuera</figcaption>
+                </figure>
+              </div>
             </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-bg-dark">
+              <div class="card-body">
+                <h2 class="card-title">Distancia</h2>
+                <p>
+                  En este mapa embebido (cortesía de Google Maps) podemos observar la cantidad aproximada de kilometros
+                  si nos dirigieramos desde la Plaza Gral San Martín hasta el establecimiento del Sótano Cultural por
+                  la Avenida Gutnisky. 5.5 km aprox. 13 minutos en auto, 15 min en bicicleta y casi 1 hora caminando.
+                </p>
+                <div class="ratio ratio-1x1">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d28641.515008645132!2d-58.20492090637092!3d-26.190517197281824!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x945ca5e47a5c896b%3A0x92f75f7383d1f8e5!2sPlaza%20Gral.%20San%20Mart%C3%ADn%2C%20Jos%C3%A9%20Mar%C3%ADa%20Uriburu%2C%20P3600%20Formosa!3m2!1d-26.1851624!2d-58.174239199999995!4m5!1s0x945caf9237461e95%3A0x7cd9363e112f80c4!2sS%C3%B3tano%20Cultural%20Formosa%2C%20Av.%20Dr.%20Luis%20Gu"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </main>
+  <footer class="pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h6 id="tituloRojo">Nosotros</h6>
+          <p id="rojitoOscuro" class="small">
+            Más que un bar, un punto clave de la escena rockera en Formosa.
+            Un espacio dedicado a la música en vivo, donde bandas locales y nacionales
+            hacen vibrar la noche con una identidad única.
+          </p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 id="tituloRojo">Dirección</h6>
+          <p id="rojitoOscuro" class="small">
+            Av. Dr. Luis Gutnisky 4306, esquina Martín Rodríguez
+          </p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 id="tituloRojo">Experiencia</h6>
+          <ul id="listas" class="list-unstyled small">
+            <li>Música en vivo</li>
+            <li>Bebidas y tragos</li>
+            <li>Ambiente rockero</li>
+            <li>Shows nacionales</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 id="tituloRojo">Seguinos</h6>
+          <ul class="list-unstyled small">
+            <li>
+              <a id="redes" href="https://www.instagram.com/sotano_cultural_/"
+                class="text-decoration-none link-primary me-3">Instagram</a>
+            </li>
+            <li>
+              <a id="redes" href="https://www.facebook.com/zonarockfsa/"
+                class="text-decoration-none link-primary me-3">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="m-auto border-black">
+    <div class="m-auto text-center mt-4 pt-3">
+      <small>© 2026 Sótano Cultural</small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 </html>
