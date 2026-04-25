@@ -9,32 +9,108 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <link rel="stylesheet" href="ASSETS/style_personal-contacto.css">
 </head>
-<header>
-     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid align-self-center">
-            <a class=" navbar-brand" href="#">Sótano Cultural</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="INICIO.HTML">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="personal-contacto.html">Personal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
-                    </li>
-                </ul>     
-            </div>
+
+ <header id="cabecera" class="py-3 py-md-5 border-bottom">
+      <div class="container-fluid px-3 px-md-5">
+  
+        <div id="logo-menu" class="d-none d-lg-flex align-items-center gap-5">
+          <img
+            src="ASSETS/IMG/LOGO.jpg"
+            alt="Logo"
+            id="logo"
+            class="rounded-circle border border-3 border-danger bg-warning p-2"
+          />
+          <div id="linea-roja"></div>
+          <ul id="menu" class="list-unstyled d-flex gap-5 m-0">
+            <li>
+              <a
+                href="INICIO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="EVENTOS.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Eventos</a
+              >
+            </li>
+            <li>
+              <a
+                href="PERSONAL.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a
+                href="CONTACTO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Contacto</a
+              >
+            </li>
+          </ul>
         </div>
-    </nav>
-</header>
+  
+        <div
+          class="d-flex d-lg-none align-items-center justify-content-between"
+        >
+          <img
+            src="ASSETS/IMG/LOGO.jpg"
+            alt="Logo"
+            class="rounded-circle border border-3 border-danger bg-warning p-1"
+            style="width: 60px; height: 60px"
+          />
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuMovil"
+            aria-controls="menuMovil"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+        </div>
+
+        <div class="collapse d-lg-none mt-3" id="menuMovil">
+          <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+            <li>
+              <a
+                href="INICIO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="EVENTOS.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Eventos</a
+              >
+            </li>
+            <li>
+              <a
+                href="PERSONAL.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a
+                href="CONTACTO.HTML"
+                class="text-white fw-bold fs-5 text-decoration-none"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
 <body>
   <main>
 
